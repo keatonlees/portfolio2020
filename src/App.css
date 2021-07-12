@@ -1,4 +1,70 @@
-.App {
+:root {
+  --bg-colour: #010030;
+  --text-colour: white;
+
+  --page-margins: 250px;
+}
+
+.web-container {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  color: var(--text-colour);
+  background-color: var(--bg-colour);
+}
+
+.page-container {
+  width: calc(100vw - 2 * var(--page-margins));
+  height: 2000px;
+}
+
+/* -------------------- PRELOADER -------------------- */
+.page-shown {
+  opacity: 1;
+  /* animation: fadeIn 500ms; */
+  transition: all 500ms ease-in-out;
+}
+.page-hidden {
+  opacity: 0;
+  /* animation: fadeOut 500ms; */
+  transition: all 500ms ease-in-out;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+Navbar {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@media only screen and (max-width: 992px) {
+  :root {
+    --page-margins: 50px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  :root {
+    --page-margins: 50px;
+  }
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +101,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
