@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 import Preloader from "../components/Preloader";
 import NavBar from "../components/NavBar";
 import Banner from "../components/Banner";
+import Projects from "../components/Projects";
+import Footer from "../components/Footer";
 
 import "../App.css";
 
@@ -33,7 +35,13 @@ function ProjectsPage(props) {
         <div className={isLoading ? "" : "page-shown"}>
           <div className="page-container">
             <NavBar />
-            <Banner title="Projects" subtitle="page" />
+            <Banner
+              pretitle="A look into what I've done"
+              title="My Projects"
+              subtitle="Designing, devloping, constructing and testing, I do a lot"
+            />
+            <Projects />
+            <Footer />
           </div>
         </div>
       )}

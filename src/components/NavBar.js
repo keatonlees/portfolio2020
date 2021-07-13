@@ -30,6 +30,11 @@ function NavBar() {
               Projects
             </Link>
           </Nav.Item>
+          <Nav.Item className="nav-item">
+            <Link className="nav-text">
+              Resume
+            </Link>
+          </Nav.Item>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

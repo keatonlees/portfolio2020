@@ -1,0 +1,33 @@
+.ftprojects-item {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: var(--ftprojects-br);
+  background-color: var(--secondary-bg-colour);
+}
+
+.ftprojects-text-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 50px;
+}
+.ftprojects-name {
+  color: var(--accent-colour);
+}
+
+.ftprojects-img-container {
+  width: 40%;
+  display: block;
+  overflow: hidden;
+  border-radius: 0px var(--ftprojects-br) var(--ftprojects-br) 0px;
+}
+
+.ftprojects-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import Preloader from "../components/Preloader";
 import NavBar from "../components/NavBar";
 import Banner from "../components/Banner";
+import FeaturedAbout from "../components/FeaturedAbout";
+import FeaturedProjects from "../components/FeaturedProjects";
+import Footer from "../components/Footer";
 
 import "../App.css";
 
@@ -33,7 +36,15 @@ function HomePage(props) {
         <div className={isLoading ? "" : "page-shown"}>
           <div className="page-container">
             <NavBar />
-            <Banner title="Home" subtitle="page" />
+            <Banner
+              pretitle="Hi! My name is"
+              title="Keaton Lees"
+              subtitle="A Systems Design Engineering Student @ The University of Waterloo"
+            />
+            <FeaturedAbout />
+            <FeaturedProjects />
+
+            <Footer />
           </div>
         </div>
       )}

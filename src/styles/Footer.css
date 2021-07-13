@@ -1,0 +1,16 @@
+.footer-container {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  font-size: calc(14px + 1vmin);
+}
+
+.footer-img {
+  width: 50px;
+}

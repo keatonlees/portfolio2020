@@ -28,6 +28,9 @@
   font-weight: 600;
   color: var(--text-colour);
 }
+.nav-text:hover {
+  color: var(--accent-colour);
+}
 
 nav .navbar-toggler {
   margin-right: calc(var(--page-margins) - 10px);

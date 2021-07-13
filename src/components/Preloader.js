@@ -2,10 +2,14 @@ import React from "react";
 
 import "../styles/Preloader.css";
 
+import keatonLogo from "../images/logo_circle_light.png";
+
 function Preloader() {
   return (
     <div className="preloader-container">
-      <h1 className="preloader-text">Loading...</h1>
+      <div className="preloader-loader">
+        <img src={keatonLogo} className="preloader-img" alt="logo" />
+      </div>
     </div>
   );
 }

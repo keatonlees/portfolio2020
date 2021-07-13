@@ -1,8 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Signika+Negative:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+
 :root {
-  --bg-colour: #010030;
-  --text-colour: white;
+  --bg-colour: #03002E;
+  --secondary-bg-colour: #03254C;
+  --text-colour: #f2fbff;
+  --secondary-text-colour: #365880;
+  --accent-colour: #3dd3f4;
 
   --page-margins: 250px;
+
+  --ftprojects-br: 10px;
 }
 
 .web-container {
@@ -13,11 +23,21 @@
   justify-content: center;
   color: var(--text-colour);
   background-color: var(--bg-colour);
+  font-family: "Signika Negative", sans-serif;
+  /* font-family: "Comfortaa", cursive; */
 }
 
 .page-container {
   width: calc(100vw - 2 * var(--page-margins));
-  height: 2000px;
+  height: 100%;
+}
+
+.homepage-title {
+  font-size: 44px;
+  margin-bottom: 40px;
+}
+.coloured {
+  color: var(--accent-colour);
 }
 
 /* -------------------- PRELOADER -------------------- */
@@ -62,6 +82,27 @@ Navbar {
   :root {
     --page-margins: 50px;
   }
+}
+
+/* -------------------- SCOLLBAR -------------------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--bg-colour);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-bg-colour);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-text-colour);
 }
 
 /* .App {

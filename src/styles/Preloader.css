@@ -7,15 +7,22 @@
   justify-content: center;
 }
 
-.preloader-text {
-  animation: spin 750ms infinite;
+.preloader-loader {
+  overflow: hidden;
+  border-bottom: 5px solid var(--bg-colour);
+  box-shadow: 0 4px 5px -5px black;
+  animation: show 1s ease-in-out;
 }
 
-@keyframes spin {
+.preloader-img {
+  height: 130px;
+}
+
+@keyframes show {
   0% {
-    transform: rotate(0deg);
+    height: 0px;
   }
   100% {
-    transform: rotate(360deg);
+    height: 135px;
   }
 }
