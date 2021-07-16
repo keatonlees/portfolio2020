@@ -1,6 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -19,19 +19,17 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <Switch>
-        <Route exact path="/portfolio/about">
-          <AboutPage preloaderTimeout={preloaderTimeout} />
-        </Route>
-        <Route exact path="/portfolio/projects">
-          <ProjectsPage preloaderTimeout={preloaderTimeout} />
-        </Route>
-        <Route path="/">
-          <HomePage preloaderTimeout={preloaderTimeout} />
-        </Route>
-      </Switch>
-    </Router>
+    <Switch>
+      <Route path="/about">
+        <AboutPage preloaderTimeout={preloaderTimeout} />
+      </Route>
+      <Route path="/projects">
+        <ProjectsPage preloaderTimeout={preloaderTimeout} />
+      </Route>
+      <Route path="/">
+        <HomePage preloaderTimeout={preloaderTimeout} />
+      </Route>
+    </Switch>
   );
 }
 

@@ -1,0 +1,39 @@
+.contact-container {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--secondary-bg-colour);
+}
+.contact-left {
+  left: 3%;
+}
+.contact-right {
+  right: -1%;
+}
+
+.contact-icon {
+  font-size: calc(14px + 1vmin);
+  margin-bottom: 25px;
+  transition: 0.2s all;
+}
+.contact-email {
+  transform: rotate(90deg);
+  margin-bottom: 100px;
+  font-size: calc(10px + 1vmin);
+  transition: 0.2s all;
+}
+.contact-icon:hover,
+.contact-email:hover {
+  cursor: pointer;
+  color: var(--accent-colour);
+  transition: 0.2s all;
+}
+
+.contact-vl {
+  width: 2px;
+  height: 120px;
+  background-color: var(--secondary-bg-colour);
+}

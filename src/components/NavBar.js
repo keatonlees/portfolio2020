@@ -5,8 +5,14 @@ import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 
 import keatonLogo from "../images/logo_circle_light.png";
+import keatonResume from "../files/KeatonLeesResume.pdf";
 
 function NavBar() {
+  const openInNewTab = (url) => {
+    var win = window.open(url, "_blank");
+    win.focus();
+  };
+
   return (
     <Navbar className="navbar-container" fixed="top" variant="dark" expand="md">
       <Navbar.Brand>
@@ -16,24 +22,29 @@ function NavBar() {
       <Navbar.Collapse id="navbar-nav">
         <Nav className="ml-auto nav-links">
           <Nav.Item className="nav-item">
-            <Link to="/portfolio" className="nav-text">
+            <Link to="/" className="nav-text">
               Home
             </Link>
           </Nav.Item>
           <Nav.Item className="nav-item">
-            <Link to="/portfolio/about" className="nav-text">
+            <Link to="/about" className="nav-text">
               About
             </Link>
           </Nav.Item>
           <Nav.Item className="nav-item">
-            <Link to="/portfolio/projects" className="nav-text">
+            <Link to="/projects" className="nav-text">
               Projects
             </Link>
           </Nav.Item>
           <Nav.Item className="nav-item">
-            <Link className="nav-text">
+            <div
+              onClick={() => {
+                openInNewTab(keatonResume);
+              }}
+              className="nav-text"
+            >
               Resume
-            </Link>
+            </div>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>

@@ -5,6 +5,7 @@ import Preloader from "../components/Preloader";
 import NavBar from "../components/NavBar";
 import Banner from "../components/Banner";
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 
 import "../App.css";
 import "../styles/AboutPage.css";
@@ -96,6 +97,7 @@ function AboutPage(props) {
             </div>
 
             <Footer />
+            <Contact />
           </div>
         </div>
       )}

@@ -9,6 +9,8 @@
 
 .footer-text {
   font-size: calc(14px + 1vmin);
+  font-weight: 600;
+  color: var(--secondary-text-colour);
 }
 
 .footer-img {

@@ -4,9 +4,10 @@ import { useState, useEffect } from "react";
 import Preloader from "../components/Preloader";
 import NavBar from "../components/NavBar";
 import Banner from "../components/Banner";
-import FeaturedAbout from "../components/FeaturedAbout";
+// import FeaturedAbout from "../components/FeaturedAbout";
 import FeaturedProjects from "../components/FeaturedProjects";
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 
 import "../App.css";
 
@@ -41,10 +42,10 @@ function HomePage(props) {
               title="Keaton Lees"
               subtitle="A Systems Design Engineering Student @ The University of Waterloo"
             />
-            <FeaturedAbout />
+            {/* <FeaturedAbout /> */}
             <FeaturedProjects />
-
             <Footer />
+            <Contact />
           </div>
         </div>
       )}

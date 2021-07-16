@@ -6,6 +6,7 @@ import NavBar from "../components/NavBar";
 import Banner from "../components/Banner";
 import Projects from "../components/Projects";
 import Footer from "../components/Footer";
+import Contact from "../components/Contact";
 
 import "../App.css";
 
@@ -42,6 +43,7 @@ function ProjectsPage(props) {
             />
             <Projects />
             <Footer />
+            <Contact />
           </div>
         </div>
       )}
